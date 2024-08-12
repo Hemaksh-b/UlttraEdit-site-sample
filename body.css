@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navi {
+    display: flex;
+}
+
+.navi li{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.navi li img{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    position: relative;
+    bottom: 3px;
+}
+
+nav span img{
+    height: 60px;
+}
+
+nav span{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background-color: beige;
+    padding-bottom: 20px;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 4fr 1fr 2fr;
+    
+}
+
+.main-box1{
+    grid-column: 3/7;
+    grid-row: 2/3;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+}
+
+.xxx{
+    font-size: 50px;
+}
+
+.bluebox{
+    background-color: rgba(52, 52, 252, 0.562);
+    border: 2px solid rgb(0, 0, 255);
+    padding: 20px;
+    width: 300px;
+    margin-top: 30px;
+    grid-column: 4/6;
+    /* justify-self: center; */
+}
+
+.box{
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+}
+
+
+.main-box2{
+    grid-row: 4/5;
+    grid-column: 3/7;
+    display: flex;
+    place-content: center;
+    justify-content: space-between;
+}
+
+.main-box2 span div{
+    margin-top: 4vh;
+
+}
