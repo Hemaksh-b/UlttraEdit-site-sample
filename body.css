@@ -10,7 +10,7 @@
 
 .navi li{
     display: flex;
-    padding: 15px;
+    padding: 1vw;
     align-items: center;
 }
 
@@ -34,7 +34,8 @@ nav span{
 nav{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1vh;
     align-items: center;
     padding-top: 15px;
     background-color: beige;
@@ -72,25 +73,81 @@ main{
     width: 300px;
     margin-top: 30px;
     grid-column: 4/6;
+    position: sticky;
     /* justify-self: center; */
 }
 
 .box{
     border: 2px solid black;
-    height: 150px;
-    width: 250px;
+    height: 10vw;
+    width: 20vw;
+    border-radius: 5px;
+    min-height: 150px;
+    min-width: 290px;
+    grid-template-columns: 2fr 7fr 2fr;
+
 }
 
 
 .main-box2{
     grid-row: 4/5;
-    grid-column: 3/7;
+    grid-column: 2/8;
     display: flex;
     place-content: center;
-    justify-content: space-between;
+    justify-content: space-around; 
+    position: relative;
 }
 
 .main-box2 span div{
     margin-top: 4vh;
 
+}
+
+@media screen and (max-width: 1180px){
+    .main-box2{
+        display: block;
+        
+    }
+    .box{
+        width: 75vw;
+        height: 300px;
+    }
+
+    main{
+        grid-template-rows: 1fr;
+
+    }
+
+    .navi ul li{
+        display: none;
+
+    }
+
+    .inside-box{
+        grid-column: 2/3;
+    }
+
+}
+
+
+.inside-text{
+    text-align: center;
+}
+
+.inside-box{
+    height: 25%;
+    width: 70%;
+    background-color: rgba(152, 152, 253, 0.486);
+    border: 2px solid black;
+    position: relative;
+    left: 5.5vh;
+    text-align: center; 
+    /* position: absolute; */
+}
+
+
+.inside-box:hover{
+    .inside-box{
+        transform: scale(5);
+    }
 }
